@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Salesforce Portfolio - Ashutosh Panigrahi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div id="tsparticles"></div>
+
+  <!-- Sticky Navigation -->
+  <nav class="sticky-nav" id="navbar">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#certifications" class="nav-link">Certifications</a>
+    <a href="#education" class="nav-link">Education</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <div class="home-image">
+        <img src="/cat pic.jpg" alt="Ashutosh Panigrahi" />
+      </div>
+      <div class="home-text">
+        <h1 class="intro-title">Hi, I am Ashutosh</h1>
+        <p class="intro-subtitle">Salesforce Software Engineer | Data Scientist | Cloud Enthusiast</p>
+        <p class="home-quote">"Turning complex ideas into elegant Salesforce solutions."</p>
+        <a href="Ashutosh_Panigrahi_Resume.pdf" class="resume-download" download>Download Resume</a>
+        <div class="social-links">
+          <a href="mailto:ashutoshpanigrahi561@gmail.com" target="_blank" aria-label="Gmail"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/ashutosh-panigrahi-b46a58168/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Ashutosh793" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="home-section boxed-section">
+    <div class="home-content">
+      <div class="home-text">
+        <h2>About Me</h2>
+        <p class="about-highlight">
+          <span class="headline">I am a Salesforce Developer</span><br>
+          with 4+ years of experience building scalable, enterprise-grade CRM solutions using Apex, LWC, and cloud platforms—leveraging data science to drive intelligent automation and business impact.
+        </p>
+        <p>
+          I hold a Master’s degree in Data Science from the University at Buffalo and a Bachelor’s in Electrical and Electronics Engineering. My work blends the worlds of software engineering and analytics, empowering businesses to make data-driven decisions and automate processes efficiently.
+        </p>
+        <p>
+          I'm passionate about continuous learning, mentoring junior developers, and contributing to open-source Salesforce tools. Outside work, I enjoy painting, sketching, and building side projects that merge creativity with code.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="home-section boxed-section">
+    <div class="home-content">
+      <div class="home-text">
+        <h2>Experience</h2>
+        <div class="project">
+          <h3>Application Development Senior Analyst – Accenture (Dec 2019 – Dec 2023)</h3>
+          <ul>
+            <li>Customized Salesforce using APEX Controllers, Triggers, Visualforce Pages, and LWC for scalable solutions that improved code efficiency for 1000+ client users.</li>
+            <li>Engineered Apex Classes, Triggers, Batch & Test Classes to meet complex requirements with optimized, scalable code.</li>
+            <li>Managed Salesforce configurations like Profiles, Roles, Permission Sets, Record Types, List Views, Flexi Pages, Lightning App Builder, and OWD.</li>
+            <li>Automated business processes using Validation Rules, Process Builders, Workflows, Flows, and Custom Formula Fields.</li>
+            <li>Queried Salesforce data using SOQL/SOSL for efficient multi-object searches and structured retrieval.</li>
+            <li>Led Salesforce Live Chat implementation, reducing customer interaction time by ~50% and increasing client sales by ~10%.</li>
+            <li>Improved code quality and performance by refactoring legacy Apex and increasing test coverage, achieving 23% runtime efficiency boost.</li>
+            <li>Collaborated with cross-functional Agile teams for requirement analysis, sprint planning, client demos, and incremental feature delivery.</li>
+            <li>Integrated third-party APIs with Salesforce via REST/SOAP using Named Credentials and JSON serialization for secure data exchange.</li>
+            <li>Set up CI/CD workflows using Git and Azure DevOps to automate deployments and streamline release cycles.</li>
+            <li>Enhanced Salesforce Sales & Service Cloud using custom objects, page layouts, and automation aligned with dynamic business needs.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="home-section boxed-section">
+    <div class="home-content">
+      <div class="home-text">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>Food Healthiness Scoring System</h3>
+          <p>Python, TensorFlow, SHAP – Built a food score predictor using 10M+ OpenFoodFacts records. R² = 0.95.</p>
+        </div>
+        <div class="project">
+          <h3>Crime Trend Analysis – NYC</h3>
+          <p>Machine learning on NYC crime data with TensorFlow. Achieved 85% accuracy in predicting incident patterns.</p>
+        </div>
+        <div class="project">
+          <h3>Adult Income Prediction</h3>
+          <p>Developed an ML model using the U.S. Census dataset to classify income brackets, reaching 88.6% accuracy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="home-section boxed-section">
+    <div class="home-content">
+      <div class="home-text">
+        <h2>Certifications</h2>
+        <div class="certification-grid">
+          <img src="Administrator.png" alt="Salesforce Certified Administrator" title="Salesforce Certified Administrator">
+          <img src="Platform-App-Builder.png" alt="Salesforce Certified App Builder" title="Salesforce Certified App Builder">
+          <img src="Platform-Developer-I.png" alt="Salesforce Certified Sales Cloud Consultant" title="Salesforce Certified Sales Cloud Consultant">
+          <img src="Salesforce-Certified-Sales-Cloud-Consultant-Badge.png" alt="Salesforce Certified Platform Developer I" title="Salesforce Certified Platform Developer I">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="home-section boxed-section">
+    <div class="home-content">
+      <div class="home-text">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>MS in Data Science</strong> – University at Buffalo (2024–2025)</li>
+          <li><strong>B.E. in Electrical and Electronics</strong> – NIST, India (2015–2019)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="home-section boxed-section">
+    <div class="home-content">
+      <div class="home-text">
+        <h2>Contact</h2>
+        <p>
+          📧 <a href="mailto:ashutoshpanigrahi561@gmail.com">ashutoshpanigrahi561@gmail.com</a><br>
+          📞 +1 (716) 390-2400<br>
+          🔗 <a href="https://linkedin.com/in/ashutosh-panigrahi-b46a58168/">LinkedIn</a> |
+          <a href="Ashutosh_Panigrahi_Resume.pdf" download>Resume</a> |
+          <a href="https://github.com/Ashutosh793">GitHub</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <script>
+    tsParticles.load("tsparticles", {
+      particles: {
+        number: { value: 80 },
+        color: { value: "#ffffff" },
+        shape: { type: "star" },
+        opacity: { value: 0.8, random: true },
+        size: { value: 2, random: true },
+        move: { enable: true, speed: 0.4 }
+      },
+      interactivity: {
+        events: {
+          onclick: { enable: true, mode: "push" },
+          onhover: { enable: true, mode: "repulse" }
+        },
+        modes: {
+          push: { quantity: 4 },
+          repulse: { distance: 100 }
+        }
+      },
+      retina_detect: true
+    });
+
+    // Scroll Spy Navigation Indicator
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".sticky-nav a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${current}`) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
