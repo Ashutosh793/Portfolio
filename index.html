@@ -30,7 +30,7 @@
   <section id="home" class="home-section">
     <div class="home-content">
       <div class="home-image">
-        <img src="cat pic.jpg" alt="Ashutosh Panigrahi" />
+        <img src="/cat pic.jpg" alt="Ashutosh Panigrahi" />
       </div>
       <div class="home-text">
         <h1 class="intro-title">Hi, I am Ashutosh</h1>
@@ -201,5 +201,54 @@
       });
     });
   </script>
+
+  <!-- Salesforce Live Chat Embed -->
+  <style type='text/css'>
+    .embeddedServiceHelpButton .helpButton .uiButton {
+      background-color: #005290;
+      font-family: "Arial", sans-serif;
+    }
+    .embeddedServiceHelpButton .helpButton .uiButton:focus {
+      outline: 1px solid #005290;
+    }
+  </style>
+
+  <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+  <script type='text/javascript'>
+    var initESW = function(gslbBaseURL) {
+      embedded_svc.settings.displayHelpButton = true;
+      embedded_svc.settings.language = '';
+      embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+      embedded_svc.settings.entryFeature = 'LiveAgent';
+
+      embedded_svc.init(
+        'https://playful-wolf-wmui4w-dev-ed.trailblaze.my.salesforce.com',
+        'https://playful-wolf-wmui4w-dev-ed.trailblaze.my.salesforce-sites.com/liveAgentSetupFlow',
+        gslbBaseURL,
+        '00Daj00000RkItd',
+        'Salesforce_Chat_Team',
+        {
+          baseLiveAgentContentURL: 'https://c.la11-core1.sfdc-8tgtt5.salesforceliveagent.com/content',
+          deploymentId: '572aj00000GyUV3',
+          buttonId: '573aj000004IPQf',
+          baseLiveAgentURL: 'https://d.la11-core1.sfdc-8tgtt5.salesforceliveagent.com/chat',
+          eswLiveAgentDevName: 'Salesforce_Chat_Team',
+          isOfflineSupportEnabled: true
+        }
+      );
+    };
+
+    if (!window.embedded_svc) {
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://playful-wolf-wmui4w-dev-ed.trailblaze.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+      s.onload = function() {
+        initESW(null);
+      };
+      document.body.appendChild(s);
+    } else {
+      initESW('https://service.force.com');
+    }
+  </script>
+
 </body>
 </html>
